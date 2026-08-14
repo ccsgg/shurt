@@ -1,6 +1,6 @@
 import express from "express";
 import sqlite3 from "sqlite3";
-import { generateShortCode } from "./public/utils.js";
+import { generateShortCode } from "./utils.js";
 
 const app = express();
 const PORT = 3000;
