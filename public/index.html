@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/output.css">
+
+  <title>shurt - URL Shortener</title>
+</head>
+
+<body class="bg-orange-50">
+
+  <main class="max-w-2xl mx-auto mt-20 p-8 bg-white rounded-xl shadow">
+
+    <h1 class="text-3xl font-bold mb-6">🔗 shurt</h1>
+
+    <form id="shorten-form" class="flex gap-3">
+
+      <input id="url" type="url" placeholder="https://example.com/a-very-long-url-to-shorten" class="flex-1 border border-gray-300 rounded-lg px-4 py-2" required>
+      <button type="submit" class="bg-orange-300 text-white px-5 py-2 rounded-lg hover:bg-amber-500 transition-colors duration-300 ease-in-out">Shorten</button>
+
+    </form>
+  </main>
+  <table id="urls-table" class="hidden w-full max-w-2xl mx-auto mt-10 bg-white rounded-t-xl shadow overflow-hidden">
+    <thead>
+      <tr class="bg-orange-300 text-white text-sm">
+        <th class="px-6 py-3 whitespace-nowrap">Short URL</th>
+        <th class="px-6 py-3 whitespace-nowrap">Original URL</th>
+        <th class="px-6 py-3 whitespace-nowrap">Clicks</th>
+        <th class="px-6 py-3 whitespace-nowrap">Created</th>
+      </tr>
+    </thead>
+    <tbody id="urls-tbody" class="divide-y divide-orange-100 bg-white text-sm">
+    </tbody>
+  </table>
+  <script src="/app.js"></script>
+</body>
+</html>
